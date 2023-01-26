@@ -20,6 +20,10 @@ Pre entrega
 </body>
 </html>
 
+
+////
+
+
 let monto= parseInt(prompt("ingrese monto"))
 
 if(monto < 500){
