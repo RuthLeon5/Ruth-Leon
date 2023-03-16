@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ADOPTA NO COMPRES</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <meta charset="utf-8">
+	<title>Login basico</title>
+</head>
+<body class="body_adopcion">
+	<right>
+		<table>
+			<tr>
+				<td><label>Usuario: </label></td> <td><input type="text" name="usuario" id="usuario"></td>
+			</tr>
+			<tr>
+				<td><label>Contraseña: </label></td> <td><input type="password" name="pass" id="pass"></td>
+			</tr>
+			<tr>
+				<td colspan="2"><input type="button" name="btnVerifivaca" id="btnVerifica" onclick="validar()" value="verificar" style = "width: 100%"> </td>
+			</tr>
+		</table>
+	</right>
+<div>
+    <div>
+       <div class="nombre_mascota">nasus</div>
+       <div class="foto_mascota"><img src="./Imagenes/nasus.JPG" alt=""></div>
+       <div class="detalles_mascota">Edad: cachorro<br>
+                                     Sexo: macho<br>
+                                     Estado: transito</div>
+    </div>
+    
+    <div>
+        <div class="nombre_mascota">Dalma</div>
+       <div class="foto_mascota"><img src="./Imagenes/dalma.JPG" alt=""></div>
+       <div class="detalles_mascota">Edad: adulta<br>
+                                     Sexo: Hembra<br>
+                                     Estado: transito</div>
+    </div>
+
+    <div>
+        <div class="nombre_mascota">Sam</div>
+       <div class="foto_mascota"><img src="./Imagenes/sami.JPG" alt=""></div>
+       <div class="detalles_mascota">Edad: Adulto<br>
+                                     Sexo: Macho<br>
+                                     Estado: transito</div>
+    </div>
+
+    </div>
+</div>
+
+<button onclick="EnAdopcion()">ADOPTA</button>
+<script type="text/javascript">
+    function validar()
+    {
+        var usuario = document.getElementById("usuario").value;
+        var Contraseña = document.getElementById("pass").value;	
+
+        if(usuario == "Ruth" && Contraseña == "1234")
+        {
+            alert("Usuario y Contraseña validos");
+        }
+        else
+        {
+            alert("Verifique sus credenciales");
+        }
+    }
+
+
+</script>
+<script src="./JS/prueba entrega.js"></script>
+</body>
+</html>
